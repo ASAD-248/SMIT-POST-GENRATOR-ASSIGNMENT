@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post card</title>
+    <!-- css link -->
+     <link rel="stylesheet" href="style.css">
+     
+</head>
+<body>
+    
+    <!-- <section>
+        <input type="text" id="text">
+        <button id="btn"  >post</button>
+    </section> -->
+    
+    <!-- <section class="post_form"> 
+        <div class="container">
+            <div class="content">
+
+
+           <div class="form_cart">
+            <div class="row">
+                <input class="inp"  type="text" id="title_inp" name="userName" placeholder="User Name">
+            </div>
+            <div class="row">
+                <input class="inp"  type="text" id="user_discription" name="user_discription" placeholder="Enter Post discription">
+            </div>
+            <div class="row">
+                <input class="inp" id="post_innerTxt"  type="text" name="post_mainTxt" placeholder="what's on your mind ?  ">
+            </div>
+            <div class="row">
+                <p>upload your profile picture</p>
+                <input class="inp" id="user_img" type="file" name="user_img" placeholder="User Name">
+            </div>
+
+            <div class="bg_colorSection">
+                <h3>Select bacground color</h3>
+            <div class="bg_boxes">
+                <div class="box">
+    
+                </div>
+                <div class="box first">    
+    
+                </div>
+                <div class="box second">    
+                    
+                </div>
+                <div class="box third">    
+                    
+                </div>
+                <div class="box fourth">    
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+            <div class="bg_boxes">
+                <div class="box">
+    
+                </div>
+                <div class="box first">    
+    
+                </div>
+                <div class="box second">    
+                    
+                </div>
+                <div class="box third">    
+                    
+                </div>
+                <div class="box fourth">    
+                    
+                </div>
+            </div>
+            <div class="btn">
+                <button onclick="postbtn()" id="post_btn">
+                   Create post
+                </button>
+            </div>
+           </div> 
+
+            </div>
+        </div>
+     </section> -->
+
+    <section class="post_mainSec">
+        <div class="post_container">
+               <!-- //******* post form *******//-->
+            <div class="content">
+
+             
+                <div class="form_cart">
+                    <div class="row">
+                        <input class="inp"  type="text" id="title_inp" name="userName" placeholder="Enter Title">
+                    </div>
+                    <div class="row">
+                        <input class="inp"  type="text" id="user_discription" name="user_discription" placeholder="Enter Post discription">
+                    </div>
+                    <div class="row">
+                        <input class="inp" id="post_innerTxt"  type="text" name="post_mainTxt" placeholder="what's on your mind ?  ">
+                    </div>
+                    <!-- <div class="row">
+                        <p>upload your profile picture</p>
+                        <input class="inp" id="user_img" type="file" name="user_img" placeholder="User Name">
+                    </div> -->
+        
+                    <!-- <div class="bg_colorSection">
+                        <h3>Select bacground color</h3>
+                    <div class="bg_boxes">
+                        <div  class="box one">
+            
+                        </div>
+                        <div class="box two">    
+            
+                        </div>
+                        <div class="box three">    
+                            
+                        </div>
+                        <div class="box four">    
+                            
+                        </div>
+                        <div class="box five">    
+                            
+                        </div>
+                        <div class="box six">    
+                            
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="bg_colorSection">
+                    <h3>Select bacground image</h3>
+                <div class="bg_boxes">
+                    <img onclick="select_bgColor('./ASSESTS/IMG/sq1.jpg')"  class="box select_bg" src="./ASSESTS/IMG/sq1.jpg" alt="">
+                    <img onclick="select_bgColor('./ASSESTS/IMG/sq22.jpg')"  class="box select_bg" src="./ASSESTS/IMG/sq2.jpg" alt="">
+                    <img onclick="select_bgColor('./ASSESTS/IMG/sq3.jpg')"  class="box select_bg" src="./ASSESTS/IMG/sq3.jpg" alt="">
+                    <img onclick="select_bgColor('./ASSESTS/IMG/sq4.jpg')"  class="box select_bg" src="./ASSESTS/IMG/sq4.jpg" alt="">
+                    <img onclick="select_bgColor('./ASSESTS/IMG/sq55.jpg')"  class="box select_bg" src="./ASSESTS/IMG/sq55.jpg" alt="">
+
+                </div>
+            </div>
+        
+        
+                     <!-- <div class="bg_boxes">
+                        <div class="box">
+            
+                        </div>
+                        <div class="box first">    
+            
+                        </div>
+                        <div class="box second">    
+                            
+                        </div>
+                        <div class="box third">    
+                            
+                        </div>
+                        <div class="box fourth">    
+                            
+                        </div>
+                        <div class="fifth">
+
+                        </div>
+                        <div class="sixth">
+
+                        </div>
+
+                    </div>   -->
+
+                    <div class="btn">
+                        <button onclick="postbtn()" id="post_btn">
+                           Create post
+                        </button>
+                    </div>
+                   </div> 
+     
+            </div>
+            <!-- //******* post card *******//-->
+            <div class="post_content">
+                <div class="post_card">
+                    <div class="row">
+                        <div class="profile_wrap">
+                            <div class="profile_img">
+                                <img id="pro_img" src="./ASSESTS/IMG/RC-Profile-Square.jpg" alt="">
+                            </div>
+                            <div class="titles_wrap">
+                                <div class="title">
+                                    <span id="post_title" class="title_txt">Title</span>
+                                </div>
+                                <div class="time">
+                                    <span id="post_time" class="time_txt">2 hrs .</span> <img src="./ASSESTS/New folder/public_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discription_container">
+                        <p id="post_discription">Lorem ipsum, dolor sit amet consectetur adipisicing
+                             elit. Vitae consectetur neque harum laboriosam, perspiciatis
+                        </p>
+                        <!-- <span>... <a href="">Semore</a></span> -->
+                    </div>
+                    <div id="post_bg" class="post_img" >
+                        <h4 id="img_text">hello</h4>
+                        <img id="back_img" src="./ASSESTS/IMG/775.jpg" alt="bg_img">
+                   </div>
+                   <!-- like and comment all content -->
+                   <div class="like_comntAllWrap">
+                   <div class="like_countRow">
+                    <div class="like_valueBox">
+                        <span class="like_circle"> <i class="fa-solid fa-thumbs-up blue_thmb"></i></span><label id="like_nmbr" class="like_nmbr" for="">1</label>
+                    </div>
+                    <div class="comment_valueBox">
+                        <div class="cmnt_txt">
+                            <label for="">10</label><span>comments</span>
+                        </div>
+                    </div>
+                   </div>
+
+                   <div class="like_commRow">
+                    <div class="icon_box">
+                     <a onclick="like_count()" href="javascript:void(0)"><i onclick="" class="fa-regular fa-thumbs-up" id=""></i></a> <label class="like_txt" for="">like</label>
+                    </div>
+                    <div class="icon_box">
+                        <i class="fa-regular fa-comment"></i> <label class="comment_txt" for="">Comment</label>
+                    </div>
+                   </div>
+                    <!-- comment displa -->
+                     <div class="comm_list">
+                        <div class="row">
+                            <div class="profile">
+                                <img src="./ASSESTS/IMG/RC-Profile-Square.jpg" alt="">
+                            </div>
+                            <div class="cmntTxt_box">
+                            <input type="text" class="comnt_txt" name="" id="" placeholder="Comments as user"></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="userCommentsWrap">
+                        <div class="user_cmntRow">
+                            <div  class="user_profile" ">
+                                <img src="./ASSESTS/IMG/RC-Profile-Square.jpg" alt="">
+                            </div>
+                            <div class="comnts_upload">
+                                <!-- <div class="txt">
+                                    <h3 class="user_name">Asad lorem</h3>
+                                    <p>hello Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae odio expedita consequatur, perspiciatis tempore quasi recusandae? At aliquid quae beatae. Blanditiis nisi aut repellendus atque facilis quibusdam eligendi asperiores optio.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div> 
+
+                     </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/1ac82f4868.js" crossorigin="anonymous"></script>
+</body>
+</html>
